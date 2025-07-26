@@ -341,7 +341,7 @@
                 const link = document.createElement('a');
                 link.href = URL.createObjectURL(blob);
                 const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-                link.download = `Aether-PDF-Export-${timestamp}.pdf`;
+                link.download = `OM-PDF-Export-${timestamp}.pdf`;
                 link.click();
                 URL.revokeObjectURL(link.href);
 
